@@ -185,3 +185,31 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Custom Skill List Bullet */
+.skill-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.skill-list li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    background-color: var(--light-blue);
+    padding: 10px 10px 10px 45px;
+    border-radius: 10px;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+.skill-list li::before {
+    content: '🎯';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
