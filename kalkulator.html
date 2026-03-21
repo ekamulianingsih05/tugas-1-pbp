@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator - Ni Luh Putu Eka Mulianingsih</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="pendidikan.html" class="nav-link">Pendidikan</a></li>
+            <li><a href="skil.html" class="nav-link">Skill</a></li>
+            <li><a href="hoby.html" class="nav-link">Hobi</a></li>
+            <li><a href="layout.html" class="nav-link">Layout</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="shortcut.html" class="nav-link active">Lainnya</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Kalkulator Sederhana</h1>
+            <div class="nim">Hitung cepat operasi dasar matematika</div>
+        </header>
+
+        <div class="main-content single-column">
+            <section class="card">
+                <div class="card-header">
+                    <h2>Panel Kalkulator</h2>
+                </div>
+
+                <div class="calculator-grid">
+                    <input type="text" id="calcDisplay" class="calc-display" readonly>
+
+                    <button class="calc-btn" data-value="7">7</button>
+                    <button class="calc-btn" data-value="8">8</button>
+                    <button class="calc-btn" data-value="9">9</button>
+                    <button class="calc-btn operator" data-value="/">/</button>
+
+                    <button class="calc-btn" data-value="4">4</button>
+                    <button class="calc-btn" data-value="5">5</button>
+                    <button class="calc-btn" data-value="6">6</button>
+                    <button class="calc-btn operator" data-value="x">x</button>
+
+                    <button class="calc-btn" data-value="1">1</button>
+                    <button class="calc-btn" data-value="2">2</button>
+                    <button class="calc-btn" data-value="3">3</button>
+                    <button class="calc-btn operator" data-value="-">-</button>
+
+                    <button class="calc-btn" data-value="0">0</button>
+                    <button class="calc-btn" data-value=".">.</button>
+                    <button class="calc-btn operator" data-value="C">C</button>
+                    <button class="calc-btn operator" data-value="+">+</button>
+
+                    <button class="calc-btn equal" style="grid-column: 1 / -1;" data-value="=">=</button>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Ni Luh Putu Eka Mulianingsih.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Table - Ni Luh Putu Eka Mulianingsih</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, var(--light-blue), var(--white));
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .table-layout {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: var(--shadow);
+            border-radius: 20px;
+            /* Hide empty border space for clean look */
+            border-style: hidden;
+        }
+
+        .table-layout th,
+        .table-layout td {
+            border: 2px solid var(--light-blue);
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        .table-header {
+            background-color: var(--primary-blue);
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            padding: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .table-sidebar {
+            width: 250px;
+            background-color: var(--light-blue);
+        }
+
+        .table-sidebar h3 {
+            color: var(--dark-blue);
+            border-bottom: 2px solid var(--secondary-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .sidebar-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-links li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-links a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 500;
+            display: block;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .sidebar-links a:hover {
+            background-color: var(--white);
+            color: var(--dark-blue);
+        }
+
+        .table-main {
+            height: 400px;
+        }
+
+        .table-footer {
+            background-color: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table-layout">
+        <!-- Header -->
+        <tr>
+            <th colspan="2" class="table-header">
+                HEADER WEBSITE
+            </th>
+        </tr>
+        <!-- Sidebar & Main Content -->
+        <tr>
+            <td class="table-sidebar">
+                <h3>Sidebar Menu</h3>
+                <ul class="sidebar-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="pendidikan.html">Pendidikan</a></li>
+                    <li><a href="skil.html">Skill</a></li>
+                    <li><a href="hoby.html">Hobi</a></li>
+                    <li><a href="layout.html" style="background:var(--white); color:var(--dark-blue);">Layout</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="shortcut.html">Lainnya</a></li>
+                </ul>
+            </td>
+            <td class="table-main">
+                <h2 style="color: var(--primary-blue); margin-top: 0;">Main Content</h2>
+                <p>Selamat datang di halaman Layout Tabel.</p>
+                <p>Halaman ini mendemonstrasikan implementasi layout halaman web menggunakan tag
+                    <strong>&lt;table&gt;</strong> HTML sesuai dengan instruksi tugas.</p>
+                <p>Komponen yang ada di layout ini meliputi:</p>
+                <ul style="line-height: 1.8;">
+                    <li><strong>Header:</strong> Bagian atas, menggabungkan 2 kolom (<code>colspan="2"</code>).</li>
+                    <li><strong>Sidebar:</strong> Bagian kiri, memuat navigasi menu secara vertikal.</li>
+                    <li><strong>Main Content:</strong> Bagian kanan, tempat memuat konten atau artikel utama.</li>
+                    <li><strong>Footer:</strong> Bagian bawah, menampilkan informasi hak cipta
+                        (<code>colspan="2"</code>).</li>
+                </ul>
+            </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+            <td colspan="2" class="table-footer">
+                &copy; 2026 Ni Luh Putu Eka Mulianingsih. Didesain dengan &lt;table&gt;.
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
